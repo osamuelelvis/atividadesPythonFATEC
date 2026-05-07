@@ -2,7 +2,6 @@ def main():
     vetor = [0]*30
     media = 0
     soma = 0
-    contador = 0
     qtd_acima = 0
     qtd_abaixo = 0
 
