@@ -21,8 +21,8 @@ def ping():
         partes = ultima_linha.split(', ')
         media = partes[2].split(' = ')[1]
     else:
-        partes = ultima_linha.split(' ')
-        media = partes[3].split('=')[1].split('/')[1]
+        ultima_linha = [l for l in linhas if 'avg' in l][0]
+        media = ultima_linha.split('/')[4]
 
     print(f"Média de ping: {media}")
 
